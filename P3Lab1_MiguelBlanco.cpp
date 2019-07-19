@@ -95,7 +95,13 @@ int main(){
 				}
 				break;
 			case 3:
+				string palabra;
+				cout<<"Ingrese sus 3 letras: ";
+				cin>>palabra;
 				
+				if(palabra.length() == 3 ){
+					cout<<"Hola";
+				}
 				break;
 		}//fin switch
 	}//fin while infinito
