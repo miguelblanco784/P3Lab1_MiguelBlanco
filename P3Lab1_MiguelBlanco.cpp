@@ -116,6 +116,8 @@ int main(){
 void recursiva(int a, int b, int c, int cont){
 	switch(cont){
 		case 1:
+			cout<<a<<b<<c;
+			recursiva(a, b, c, cont+1);
 			break;
 		case 2:
 			break;
