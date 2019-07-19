@@ -9,9 +9,12 @@ int factorial(int x);
 int main(){
 	int opcion;
 	while(true){
-		cout<<"0- Salir\n1- Punto de Silla\n2- Numeros Triangulares\n3- Sin repeticion\n";
+		cout<<"0- Salir\n1- Ejercicio 1\n2- Ejercicio 2\n3- Ejercicio 3\n";
 		cin>>opcion;
 		switch(opcion){
+			case 0:
+				exit(0);
+				break;
 			case 1:
 				int **matrizsilla;
 				matrizsilla = new int *[5];
@@ -102,8 +105,16 @@ int main(){
 				cout<<"Ingrese sus palabras: ";
 				cin>>palabra;
 				palabra[0];
-				cout<<factorial(5)<<endl;
+				int factorialtam;
+				factorialtam = factorial(palabra.length());
+				for(int j; j < factorialtam; j++){
+					for(int y; y < factorialtam/palabra.length();y++,j++){
+						cout<<palabra[y];
+					}
+					cout<<endl;
+				}
 				break;
+			
 		}//fin switch
 	}//fin while infinito
 	system("pause");
