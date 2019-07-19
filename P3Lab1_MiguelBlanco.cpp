@@ -128,10 +128,11 @@ void recursiva(int a, int b, int c, int cont){
 			recursiva(a, b, c, cont+1);
 			break;
 		case 4:
-			cout<<a<<c<<b<<endl;
+			cout<<b<<c<<a<<endl;
 			recursiva(a, b, c, cont+1);
 			break;
 		case 5:
+			
 			break;
 		case 6:
 			break;
