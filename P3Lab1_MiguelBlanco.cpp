@@ -1,8 +1,10 @@
 #include<iostream>
 #include<string.h>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
-void recursivas(a, b, c, d);
+int factorial(int x);
 
 int main(){
 	int opcion;
@@ -97,15 +99,10 @@ int main(){
 				break;
 			case 3:
 				string palabra;
-				cout<<"Ingrese sus 3 letras: ";
+				cout<<"Ingrese sus palabras: ";
 				cin>>palabra;
-				
-				if(palabra.length() == 3 ){
-					char a = palabra.charAt(0);
-					char b = palabra.charAt(1);
-					char c = palabra.charAt(2);
-					recursiva(a, b, c, 0);
-				}
+				palabra[0];
+				cout<<factorial(5)<<endl;
 				break;
 		}//fin switch
 	}//fin while infinito
@@ -113,34 +110,10 @@ int main(){
 	return 0;
 }
 
-void recursiva(int a, int b, int c, int cont){
-	switch(cont){
-		case 1:
-			cout<<a<<b<<c<<endl;
-			recursiva(a, b, c, cont+1);
-			break;
-		case 2:
-			cout<<a<<c<<b<<endl;
-			recursiva(a, b, c, cont+1);
-			break;
-		case 3:
-			cout<<b<<a<<c<<endl;
-			recursiva(a, b, c, cont+1);
-			break;
-		case 4:
-			cout<<b<<c<<a<<endl;
-			recursiva(a, b, c, cont+1);
-			break;
-		case 5:
-			cout<<c<<a<<b<<endl;
-			recursiva(a, b, c, cont+1);
-			break;
-		case 6:
-			cout<<c<<b<<a<<endl;
-			recursiva(a, b, c, cont+1);
-			break;
-		case 7:
-			break;
-				
+int factorial(int x){
+	if (x==0){
+		return 1;	
+	} else {
+		return x*factorial(x-1);
 	}
 }
