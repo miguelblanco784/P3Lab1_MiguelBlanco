@@ -2,6 +2,7 @@
 #include<string.h>
 
 using namespace std;
+void recursivas(a, b, c, d);
 
 int main(){
 	int opcion;
@@ -100,11 +101,34 @@ int main(){
 				cin>>palabra;
 				
 				if(palabra.length() == 3 ){
-					cout<<"Hola";
+					char a = palabra.charAt(0);
+					char b = palabra.charAt(1);
+					char c = palabra.charAt(2);
+					recursiva(a, b, c, 0);
 				}
 				break;
 		}//fin switch
 	}//fin while infinito
 	system("pause");
 	return 0;
+}
+
+void recursiva(int a, int b, int c, int cont){
+	switch(cont){
+		case 1:
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			break;
+		case 6:
+			break;
+		case 7:
+			break;
+				
+	}
 }
